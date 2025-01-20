@@ -8,7 +8,6 @@ allow pixelstats_vendor sysfs_batteryinfo:file w_file_perms;
 allow pixelstats_vendor self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
 allow pixelstats_vendor mnt_vendor_file:dir search;
-get_prop(pixelstats_vendor, smart_idle_maint_enabled_prop)
 
 # Pixel MM Metrics: (Atoms: PixelMmMetricsPerHour, PixelMmMetricsPerDay,
 #                    CmaStatus, CmaStatusExt, ZramBdStat, ZramMmStat)
