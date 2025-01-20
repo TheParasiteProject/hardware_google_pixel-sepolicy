@@ -10,9 +10,6 @@ allow pixelstats_vendor self:netlink_kobject_uevent_socket create_socket_perms_n
 allow pixelstats_vendor mnt_vendor_file:dir search;
 get_prop(pixelstats_vendor, smart_idle_maint_enabled_prop)
 
-allow pixelstats_vendor fwk_stats_service:service_manager find;
-binder_call(pixelstats_vendor, stats_service_server)
-
 # Pixel MM Metrics: (Atoms: PixelMmMetricsPerHour, PixelMmMetricsPerDay,
 #                    CmaStatus, CmaStatusExt, ZramBdStat, ZramMmStat)
 allow pixelstats_vendor kernel:dir search;
